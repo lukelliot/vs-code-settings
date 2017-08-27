@@ -1,0 +1,84 @@
+{
+    /*
+        // Place your snippets for Ruby here. Each snippet is defined under a snippet name and has a prefix, body and 
+        // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+        // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+        // same ids are connected.
+        // Example:
+        "Print to console": {
+            "prefix": "log",
+            "body": [
+                "console.log('$1');",
+                "$2"
+            ],
+            "description": "Log output to console"
+        }
+        */
+        "do": {
+            "prefix": "do",
+            "body": [
+                "do |${1:variable}|",
+                "	$0",
+                "end"
+            ]
+        },
+    
+        "map": {
+            "prefix": "map",
+            "body": [
+                "map do |${1:variable}|",
+                "	$0",
+                "end"
+            ]
+        },
+        
+        "each": {
+            "prefix": "each",
+            "body": [
+                "each do |${1:variable}|",
+                "	$0",
+                "end"
+            ]
+        },
+    
+        "each_with_object": {
+            "prefix": "each_with_object",
+            "body": [
+                "each_with_object(${1:object}) do |${2:variable}|",
+                "	$0",
+                "end"
+            ]
+        },
+        
+        "inject": {
+            "prefix": "inject",
+            "body": [
+                "inject(${1:object}) do |${2:variable}|",
+                "	$0",
+                "end"
+            ]
+        },
+    
+        "each_char": {
+            "prefix": "each_char",
+            "body": [
+                "each_char do |${1:variable}|",
+                "	$0",
+                "end"
+            ]
+        },
+    
+        "merge": {
+            "prefix": "merge",
+            "body": [
+                "merge(${2:object})"
+            ]
+        },
+    
+        "interpolate": {
+            "prefix": "si",
+            "body": [
+                "#{$0}"
+            ]
+        }
+}
